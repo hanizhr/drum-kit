@@ -9,4 +9,4 @@ for (var i =0;i<document.querySelectorAll('.drum').length;i++){
 
 document.addEventListener('keypress',function (event){
 var audio = new Audio(`sounds/tom${String(event.key)}.mp3`);
-audio.play();
+audio.play();})
