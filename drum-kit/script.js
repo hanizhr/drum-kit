@@ -7,10 +7,6 @@ for (var i =0;i<document.querySelectorAll('.drum').length;i++){
 });
 }
 
-
-for (var i =0;i<document.querySelectorAll('.drum').length;i++){
-    document.querySelectorAll('.drum')[i].addEventListener('keypress',function (){
-    var audio = new Audio(`sounds/tom2.mp3`);
-    audio.play();
-});
-}
+document.addEventListener('keypress',function (event){
+var audio = new Audio(`sounds/tom${String(event.key)}.mp3`);
+audio.play();
